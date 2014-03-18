@@ -1,0 +1,65 @@
+Invoked as: ./configure 
+Failed: ccache cc -g -O2 conftest__.c -o conftest__
+/tmp/ccqjWV5I.o: In function `main':
+/home/isaac/Desktop/localDirectory/Fossil/conftest__.c:3: undefined reference to `inflateEnd'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void inflateEnd(void);
+int main(void) {
+inflateEnd();
+return 0;
+}
+============
+Failed: ccache cc -g -O2 -c conftest__.c -o conftest__.o
+conftest__.c:2:31: fatal error: readline/readline.h: No such file or directory
+ #include <readline/readline.h>
+                               ^
+compilation terminated.
+============
+The failed code was:
+#include <stdio.h>
+#include <readline/readline.h>
+int main(void) {
+
+return 0;
+}
+============
+Failed: ccache cc -g -O2 -c conftest__.c -o conftest__.o
+conftest__.c:2:31: fatal error: editline/readline.h: No such file or directory
+ #include <editline/readline.h>
+                               ^
+compilation terminated.
+============
+The failed code was:
+#include <stdio.h>
+#include <editline/readline.h>
+int main(void) {
+
+return 0;
+}
+============
+Failed: ccache cc -g -O2 conftest__.c -o conftest__
+/tmp/ccKYQEl3.o: In function `main':
+/home/isaac/Desktop/localDirectory/Fossil/conftest__.c:3: undefined reference to `getpassphrase'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void getpassphrase(void);
+int main(void) {
+getpassphrase();
+return 0;
+}
+============
+Failed: ccache cc -g -O2 conftest__.c -o conftest__
+/tmp/ccLoU3br.o: In function `main':
+/home/isaac/Desktop/localDirectory/Fossil/conftest__.c:3: undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+============
+The failed code was:
+extern void dlopen(void);
+int main(void) {
+dlopen();
+return 0;
+}
+============
