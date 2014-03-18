@@ -515,7 +515,7 @@ const char zDefaultCSS[] =
 @ body {
 @   margin: 0ex 1ex;
 @   padding: 0px;
-@   background-color: white;
+@   background-color: blue;
 @   font-family: sans-serif;
 @ }
 @
